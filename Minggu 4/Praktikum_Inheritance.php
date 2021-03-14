@@ -33,7 +33,3 @@ $sportCar1->setModel('Mercedes Benz');
 
 //Use another method that the child class inherited from the parent class
 echo $sportCar1->hello();
-
-/*
-Output : beep! I am a Mercedes Benz
-*/
