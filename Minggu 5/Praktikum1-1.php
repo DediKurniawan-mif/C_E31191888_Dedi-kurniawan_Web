@@ -1,6 +1,6 @@
 <?php
 
-interface Ca {
+interface Car {
     public function setModel($name);
 
     public function getModel();
