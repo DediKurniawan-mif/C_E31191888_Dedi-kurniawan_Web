@@ -29,7 +29,7 @@ class Tablet {
 
     public function getInfoProduk()
     {
-        $str = "Merk : {$this->merk} <br> Camera : {$this->camera} Gb <br> Memory : {$this->memory} Mp";
+        $str = "Merk : {$this->merk} <br> Camera : {$this->camera} Mp <br> Memory : {$this->memory} Gb";
 
         return $str;
     }
@@ -54,23 +54,13 @@ class Handphone extends Tablet {
     }
 }
 
-$hp = new Handphone("S10", "Samsung", 16, 8);
+$hp = new Handphone("Iphone 7", "Apple", 18, 64);
 echo $hp->getInfoProduk();
 
 /*
 Output : 
-Nama : S10
-Merk : Samsung
-Camera : 16 Gb
-Memory : 8 Mp
-
-Penjelasan :
-Karena property pada kelas parent memiliki Visibility protected, maka untuk mengakses propery parent (Tablet) pada
-kelas child (Handphone) hanya dapat dilakukan secara langsung dari dalam kelas child (Handphone).
-
-Karena Property dengan Visibility protected tetap dapat dikases oleh child class, namun tetap tidak dapat diakses
-di luar kelas yang tidak termasuk child class. 
-
-Jika ingin mengakses property kelas Tablet dari luar kelas tersebut,jika tidak termasuk kelas child/turunan maka harus 
-menggunakan metode getter dan setter.
+Nama : Iphone 7
+Merk : Apple
+Camera : 18 Mp
+Memory : 64 Gb
 */
