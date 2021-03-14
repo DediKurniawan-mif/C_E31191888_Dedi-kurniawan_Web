@@ -94,13 +94,13 @@ class Celana extends ItemProduk {
 
     public function Ukuran() {
         $size = "Custom";
-        if ($this->getUkuran() > 25 && $this->getUkuran() <= 27){
+        if ($this->getUkuran() > 26 && $this->getUkuran() <= 28){
             $size = "S";
-        } elseif ($this->getUkuran() > 27 && $this->getUkuran() <= 30) {
+        } elseif ($this->getUkuran() > 28 && $this->getUkuran() <= 31) {
             $size = "M";
-        } elseif ($this->getUkuran() === 31) {
+        } elseif ($this->getUkuran() === 32) {
             $size = "L";
-        } elseif ($this->getUkuran() > 31 && $this->getUkuran() <= 33) {
+        } elseif ($this->getUkuran() > 32 && $this->getUkuran() <= 34) {
             $size = "XL";
         }
 
@@ -140,13 +140,13 @@ class Baju extends ItemProduk {
 
     public function Ukuran() {
         $size = "Custom";
-        if ($this->getUkuran() > 46 && $this->getUkuran() <= 48){
+        if ($this->getUkuran() > 47 && $this->getUkuran() <= 48){
             $size = "S";
         } elseif ($this->getUkuran() > 48 && $this->getUkuran() <= 50) {
             $size = "M";
-        } elseif ($this->getUkuran() > 50 && $this->getUkuran() <= 52) {
+        } elseif ($this->getUkuran() > 50 && $this->getUkuran() <= 53) {
             $size = "L";
-        } elseif ($this->getUkuran() > 52 && $this->getUkuran() <= 54) {
+        } elseif ($this->getUkuran() > 53 && $this->getUkuran() <= 55) {
             $size = "XL";
         }
 
@@ -171,15 +171,15 @@ class Baju extends ItemProduk {
     }
 }
 
-$topi = new Topi("Snapback", 54, "Merah Putih", "Marvel");
+$topi = new Topi("Snapback", 55, "Hitam", "Marvel");
 echo $topi->getInfoProduk();
 
 echo "<br><br>";
 
-$celana = new Celana("Lea", 27, "Hitam", "Panjang", "Jeans");
+$celana = new Celana("Jeans", 29, "Hitam", "Panjang", "Ballenciaga");
 echo $celana->getInfoProduk();
 
 echo "<br><br>";
 
-$baju = new Baju("Nike Classic", 49, "Putih", "Kaos");
+$baju = new Baju("Myth", 47, "Hitam", "Kaos");
 echo $baju->getInfoProduk();
