@@ -57,7 +57,7 @@ class CetakInfoKendaraan {
     }
 }
 
-$kendaraan1 = new Kendaraan("Kijang KF50", "Mobil", 4, "Toyota", "Premium", 100000000, 1996);
+$kendaraan1 = new Kendaraan("Honda BRIO", "Mobil", 4, "Honda", "Premium", 120000000, 1999);
 $info_kendaraan1 = new CetakInfoKendaraan();
 echo $info_kendaraan1->infoKendaraan($kendaraan1);
 echo "<br>";
@@ -67,7 +67,7 @@ echo $info_kendaraan1->infoHargaSecond($kendaraan1);
 
 echo "<br><br>";
 
-$kendaraan2 = new Kendaraan("Kijang Innova New Venturer", "Mobil", 4, "Toyota", "Pertamax", 400000000, 2021);
+$kendaraan2 = new Kendaraan("BMW X3 Sedan", "Mobil", 4, "BMW", "Pertamax", 900000000, 2021);
 $info_kendaraan2 = new CetakInfoKendaraan();
 echo $info_kendaraan2->infoKendaraan($kendaraan2);
 echo "<br>";
