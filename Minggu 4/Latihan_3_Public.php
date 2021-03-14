@@ -5,7 +5,7 @@ class Tablet {
 
     public function getInfoProduk()
     {
-        $str = "Merk : {$this->merk} <br> Camera : {$this->camera} Gb <br> Memory : {$this->memory} Mp";
+        $str = "Merk : {$this->merk} <br> Camera : {$this->camera} Mp <br> Memory : {$this->memory} Gb";
 
         return $str;
     }
@@ -30,19 +30,13 @@ class Handphone extends Tablet {
     }
 }
 
-$hp = new Handphone("S10", "Samsung", 16, 8);
+$hp = new Handphone("Iphone 7", "Apple", 18, 64);
 echo $hp->getInfoProduk();
 
 /*
 Output : 
-Nama : S10
-Merk : Samsung
-Camera : 16 Gb
-Memory : 8 Mp
-
-Penjelasan :
-Karena property pada kelas parent memiliki Visibility public, maka untuk mengakses propery parent (Tablet) pada
-kelas child (Handphone) dapat dilakukan secara langsung dari dalam maupun luar kelas child (Handphone).
-
-Karena Property dengan Visibility public dapat diakses dari mana saja.
+Nama : Iphone 7
+Merk : Apple
+Camera : 18 Mp
+Memory : 64 Gb
 */
