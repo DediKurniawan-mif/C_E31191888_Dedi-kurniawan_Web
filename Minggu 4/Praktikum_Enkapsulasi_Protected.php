@@ -26,10 +26,3 @@ $sportsCarl = new SportsCar();
 // Set the class model name
 $sportsCarl->setModel('Mercedes Benz');
 echo $sportsCarl->hello();
-
-/*
-Output : beep! I am a Mercedes Benz
-Penjelasan :
-Property dengan Visibility protected tetap dapat dikases oleh child class, namun tetap tidak dapat diakses
-di luar kelas yang tidak termasuk child class.
-*/
