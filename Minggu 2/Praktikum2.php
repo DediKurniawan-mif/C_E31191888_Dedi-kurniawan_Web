@@ -27,15 +27,3 @@ $tank = $bmw->fill(10)->ride(40)->tank;
 
 // Printout.
 echo "The number of gallons left in the tank: " . $tank . "gal.";
-
-/*
-Output : The number of gallons left in the tank: 9.2gal.
-
-Penjelasan : 
-Variabel $this adalah sebuah variabel khusus dalam OOP PHP yang digunakan sebagai penunjuk 
-kepada objek, ketika kita mengaksesnya dari dalam class.
-
-Dimana Operator objek '->' digunakan dalam cakupan objek untuk mengakses method dan properti objek. 
-Artinya adalah apa yang ada di sebelah kanan operator adalah anggota dari objek 
-yang dipakai ke dalam variabel di sisi kiri operator.
-*/
