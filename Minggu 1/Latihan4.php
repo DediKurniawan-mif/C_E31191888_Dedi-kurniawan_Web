@@ -35,6 +35,6 @@ class Buku {
 
 }
 
-$buku1 = new Buku("7 in 1 Pemrograman Web untuk Pemula", "Rohi Abdulloh", "Elex Media Komputindo", 80000, 336);
+$buku1 = new Buku("Aplikasi Millenial Menggunakan Android Studio", "Andy Kurniawan", "Gramedia", 65000, 600);
 $buku1->setDiskon(11);
 echo $buku1->getInfoBuku();
